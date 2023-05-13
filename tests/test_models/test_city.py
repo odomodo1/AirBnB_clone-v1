@@ -20,7 +20,7 @@ class Test_instanceCity(unittest.TestCase):
         """ Tear down for all methods """
         try:
             remove("file.json")
-        except:
+        except Exception:
             pass
 
     def test_instance(self):
@@ -48,7 +48,7 @@ class Test_class_attrsCity(unittest.TestCase):
         """ Tear down for all methods """
         try:
             remove("file.json")
-        except:
+        except Exception:
             pass
 
     def test_correct_classattr(self):
@@ -86,7 +86,7 @@ class Test_initCity(unittest.TestCase):
         """ Tear down for all methods """
         try:
             remove("file.json")
-        except:
+        except Exception:
             pass
 
     def test_instance_creation_no_arg(self):
@@ -206,7 +206,7 @@ class Test_str__City(unittest.TestCase):
         """ Tear down for all methods """
         try:
             remove("file.json")
-        except:
+        except Exception:
             pass
 
     def test_print(self):
@@ -267,7 +267,7 @@ class Test_saveCity(unittest.TestCase):
         """ Tear down for all methods """
         try:
             remove("file.json")
-        except:
+        except Exception:
             pass
 
     def test_save(self):
@@ -298,7 +298,7 @@ class Test_to_dictCity(unittest.TestCase):
         """ Tear down for all methods """
         try:
             remove("file.json")
-        except:
+        except Exception:
             pass
 
     def test_to_dict(self):

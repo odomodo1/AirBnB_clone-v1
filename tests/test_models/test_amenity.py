@@ -11,6 +11,7 @@ import unittest
 from unittest.mock import patch
 from time import sleep
 
+
 class Test_instanceState(unittest.TestCase):
 
     """ Class for unittest of instance check """
@@ -19,7 +20,7 @@ class Test_instanceState(unittest.TestCase):
         """ Tear down for all methods """
         try:
             remove("file.json")
-        except:
+        except Exception:
             pass
 
     def test_instance(self):
@@ -47,7 +48,7 @@ class Test_class_attrsAmenity(unittest.TestCase):
         """ Tear down for all methods """
         try:
             remove("file.json")
-        except:
+        except Exception:
             pass
 
     def test_correct_classattr(self):
@@ -85,11 +86,9 @@ class Test_initAmenity(unittest.TestCase):
         """ Tear down for all methods """
         try:
             remove("file.json")
-        except:
-            pass
-
-    def test_instance_creation_no_arg(self):
-        """ No arguments """
+        except Exception:
+            test_instance_creation_no_arg(self):
+                """ No arguments """
         b1 = Amenity()
         self.assertTrue(hasattr(b1, "id"))
         self.assertTrue(hasattr(b1, "created_at"))
@@ -205,7 +204,7 @@ class Test_str__Amenity(unittest.TestCase):
         """ Tear down for all methods """
         try:
             remove("file.json")
-        except:
+        except Exception:
             pass
 
     def test_print(self):
@@ -266,7 +265,7 @@ class Test_saveAmenity(unittest.TestCase):
         """ Tear down for all methods """
         try:
             remove("file.json")
-        except:
+        except Exception:
             pass
 
     def test_save(self):
@@ -297,7 +296,7 @@ class Test_to_dictAmenity(unittest.TestCase):
         """ Tear down for all methods """
         try:
             remove("file.json")
-        except:
+        except Exception:
             pass
 
     def test_to_dict(self):

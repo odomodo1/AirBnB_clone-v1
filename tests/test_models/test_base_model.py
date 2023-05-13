@@ -22,7 +22,7 @@ class Test_init(unittest.TestCase):
         """ Tear down for all methods """
         try:
             remove("file.json")
-        except:
+        except Exception:
             pass
 
     def test_instance_creation_no_arg(self):
@@ -142,7 +142,7 @@ class Test_str__(unittest.TestCase):
         """ Tear down for all methods """
         try:
             remove("file.json")
-        except:
+        except Exception:
             pass
 
     def test_print(self):
@@ -203,7 +203,7 @@ class Test_save(unittest.TestCase):
         """ Tear down for all methods """
         try:
             remove("file.json")
-        except:
+        except Exception:
             pass
 
     def test_save(self):
@@ -234,7 +234,7 @@ class Test_to_dict(unittest.TestCase):
         """ Tear down for all methods """
         try:
             remove("file.json")
-        except:
+        except Exception:
             pass
 
     def test_to_dict(self):

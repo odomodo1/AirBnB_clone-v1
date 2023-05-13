@@ -20,7 +20,7 @@ class Test_instancePlace(unittest.TestCase):
         """ Tear down for all methods """
         try:
             remove("file.json")
-        except:
+        except Exception:
             pass
 
     def test_instance(self):
@@ -48,7 +48,7 @@ class Test_class_attrsPlace(unittest.TestCase):
         """ Tear down for all methods """
         try:
             remove("file.json")
-        except:
+        except Exception:
             pass
 
     def test_correct_classattr(self):
@@ -107,7 +107,7 @@ class Test_initPlace(unittest.TestCase):
         """ Tear down for all methods """
         try:
             remove("file.json")
-        except:
+        except Exception:
             pass
 
     def test_instance_creation_no_arg(self):
@@ -227,7 +227,7 @@ class Test_str__Place(unittest.TestCase):
         """ Tear down for all methods """
         try:
             remove("file.json")
-        except:
+        except Exception:
             pass
 
     def test_print(self):
@@ -312,7 +312,7 @@ class Test_to_dictPlace(unittest.TestCase):
         """ Tear down for all methods """
         try:
             remove("file.json")
-        except:
+        except Exception:
             pass
 
     def test_to_dict(self):
